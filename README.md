@@ -1,6 +1,6 @@
-# Primera Fase – Proyecto de Cátedra DSS
+# Primera Fase – Proyecto de Cátedra DSS - G03T
 
-## Integrantes
+## Integrantes 
 
 1. **Roberto Antonio Cabrera Navas** – CN233178  
 2. **Jessica Paola Álvarez Sánchez** – AS241238  

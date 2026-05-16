@@ -1,4 +1,4 @@
-#Sistema de Citas Medicas
+##Sistema de Citas Medicas
 
 "Sistema web para la gestión de citas médicas"
 

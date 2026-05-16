@@ -1,0 +1,368 @@
+/* ===================================
+   PROGRAMAR CITA EXACTO AL DISEÑO
+=================================== */
+
+.registro-card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #d4d4d4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  margin-top: 12px;
+}
+
+/* HEADER */
+
+.registro-card .card-header {
+  background: #dfe8fb;
+  padding: 15px 22px;
+  font-size: 14px;
+  color: #5d6c84;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/* ===================================
+   FORMULARIO
+=================================== */
+
+.registro-form {
+  padding: 20px;
+}
+
+/* GRID */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+/* COLUMNAS */
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ===================================
+   LABELS
+=================================== */
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1450b8;
+}
+
+/* ===================================
+   INPUTS GENERALES
+=================================== */
+
+input,
+textarea,
+select,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===================================
+   INPUT ICON
+=================================== */
+
+.input-icon {
+  position: relative;
+  width: 100%;
+}
+
+/* ICONOS */
+
+.input-icon i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #5f7db6;
+  font-size: 15px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ===================================
+   INPUTS
+=================================== */
+
+.input-icon input,
+.input-icon select {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  padding: 0 12px 0 65px;
+  font-size: 14px;
+  color: #4d5c74;
+  background: #fff;
+  outline: none;
+}
+
+/* ===================================
+   FECHA
+=================================== */
+
+#fechaInput {
+  cursor: pointer;
+}
+
+/* ===================================
+   HORA AJUSTADA
+=================================== */
+
+#horaInput {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  padding-left: 40px;
+  padding-right: 10px;
+  font-size: 14px;
+  color: #4d5c74;
+  background: #fff;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Hacer que el icono nativo sea invisible pero cubra todo el input */
+#horaInput::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  /* Esto lo hace invisible pero clickable */
+  opacity: 0;
+}
+
+/* Asegurar que el icono azul (el i) esté por ENCIMA del input para que se vea, 
+   pero que deje pasar el click (pointer-events: none ya lo tienes) */
+.input-icon i {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1450b8; /* Cambiado a un azul más fuerte como el de tus labels */
+  font-size: 15px;
+  z-index: 5; /* Mayor que el input */
+  pointer-events: none;
+}
+
+/* ===================================
+   CALENDARIO
+=================================== */
+
+.calendar-box {
+  width: 100%;
+  border: 1px solid #bfc8da;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+/* HEADER */
+
+.calendar-header {
+  background: #dfe8fb;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #65728a;
+  font-weight: 600;
+}
+
+/* GRID */
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+/* DIAS */
+
+.calendar-grid div {
+  padding: 11px 0;
+  font-size: 13px;
+  color: #4f5f79;
+  border: 1px solid #edf0f5;
+  transition: 0.2s;
+}
+
+/* NOMBRES */
+
+.day-name {
+  font-weight: 700;
+  color: #6f7f99;
+  background: #f7f9fd;
+}
+
+/* FECHAS */
+
+.calendar-grid div:not(.day-name) {
+  cursor: pointer;
+}
+
+/* HOVER */
+
+.calendar-grid div:not(.day-name):hover {
+  background: #2d68df;
+  color: white;
+}
+
+/* DIA ACTIVO */
+
+.calendar-grid .active-day {
+  background: #2d68df;
+  color: white;
+  font-weight: 600;
+}
+
+/* ===================================
+   MOTIVO
+=================================== */
+
+.motivo-box {
+  position: relative;
+  width: 100%;
+}
+
+.motivo-box i {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  color: #5f7db6;
+  font-size: 15px;
+}
+
+.motivo-box textarea {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 12px 12px 40px;
+  font-size: 14px;
+  color: #4d5c74;
+  outline: none;
+}
+
+/* ===================================
+   NOTAS
+=================================== */
+
+.notes-section {
+  margin-top: 18px;
+}
+
+.notes-section label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1450b8;
+}
+
+.notes-section textarea {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  resize: none;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #4d5c74;
+  outline: none;
+}
+
+/* ===================================
+   BOTONES
+=================================== */
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+/* CANCELAR */
+
+.btn-cancel {
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  color: #8b8b8b;
+  height: 42px;
+  padding: 0 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* GUARDAR */
+
+.btn-save {
+  background: #18a63a;
+  border: none;
+  color: white;
+  height: 42px;
+  padding: 0 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* ICONOS BOTONES */
+
+.btn-save i,
+.btn-cancel i {
+  font-size: 15px;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .btn-save,
+  .btn-cancel {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* MOVER TEXTO INTERNO */
+
+#fechaInput,
+#horaInput,
+.input-icon input,
+.input-icon select{
+    padding-left: 50px !important;
+}

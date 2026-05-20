@@ -1,0 +1,131 @@
+/* ===================================
+   REPORTES PAGES
+=================================== */
+
+.main-content{
+    padding: 20px;
+}
+
+/* BREADCRUMB */
+
+.breadcrumb{
+    font-size: 13px;
+    color: #7b8798;
+    margin-bottom: 8px;
+}
+
+/* TITULO */
+
+.page-title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #0b6aa8;
+    margin-bottom: 20px;
+}
+
+/* CARD */
+
+.table-card{
+    background: white;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,.08);
+}
+
+/* TABLA */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* HEAD */
+
+thead{
+    background: #dfe8fb;
+}
+
+thead th{
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #1450b8;
+}
+
+/* BODY */
+
+tbody td{
+    padding: 15px;
+    border-top: 1px solid #ececec;
+    font-size: 14px;
+    color: #5a677d;
+}
+
+/* HOVER */
+
+tbody tr:hover{
+    background: #f7faff;
+}
+
+/* STARS */
+
+.stars{
+    color: #f7b500;
+    font-size: 18px;
+}
+
+/* ===================================
+   STATS
+=================================== */
+
+.stats-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.stat-card{
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 2px 5px rgba(0,0,0,.08);
+    padding: 25px;
+    text-align: center;
+}
+
+.stat-card i{
+    font-size: 42px;
+    color: #1450b8;
+    margin-bottom: 12px;
+}
+
+.stat-card h3{
+    font-size: 20px;
+    color: #1450b8;
+    margin-bottom: 8px;
+}
+
+.stat-card p{
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.stats-grid{
+    grid-template-columns: 1fr;
+}
+
+table{
+    display: block;
+    overflow-x: auto;
+}
+
+.page-title{
+    font-size: 24px;
+}
+
+}

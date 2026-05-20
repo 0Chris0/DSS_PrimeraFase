@@ -1,0 +1,140 @@
+/* CONTENIDO PRINCIPAL */
+
+.main-content{
+    padding: 24px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BOX SIZING */
+
+.main-content *,
+.main-content *::before,
+.main-content *::after{
+    box-sizing: border-box;
+}
+
+/* BREADCRUMB */
+
+.breadcrumb{
+    font-size: 13px;
+    color: #8a94a6;
+    margin-bottom: 8px;
+}
+
+/* TITULO */
+
+.page-title{
+    font-size: 28px;
+    font-weight: 700;
+    color: #0b6aa8;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   TARJETA TABLA
+   ========================================================================== */
+
+.table-card{
+    width: 100%;
+    max-width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #d7d7d7;
+    box-shadow: 0 4px 10px rgba(0,0,0,.06);
+    margin-top: 15px;
+
+    /* IMPORTANTE */
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+/* TABLA */
+
+.table-card table{
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+}
+
+/* HEADERS */
+
+.table-card th{
+    background-color: #dfe8fb;
+    color: #1450b8;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #cbd5e1;
+    white-space: nowrap;
+}
+
+/* DATOS */
+
+.table-card td{
+    padding: 16px 20px;
+    font-size: 14px;
+    color: #4b5a73;
+    text-align: left;
+    border-bottom: 1px solid #f1f5f9;
+    white-space: nowrap;
+}
+
+/* ÚLTIMA FILA */
+
+.table-card tbody tr:last-child td{
+    border-bottom: none;
+}
+
+/* HOVER */
+
+.table-card tbody tr:hover td{
+    background-color: #f8fafc;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media(max-width:768px){
+
+    html,
+    body{
+        overflow-x: hidden;
+    }
+
+    .main-content{
+        width: 100%;
+        max-width: 100%;
+        padding: 14px;
+        margin-left: 0;
+        overflow-x: hidden;
+    }
+
+    .page-title{
+        font-size: 22px;
+    }
+
+    .table-card{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .table-card table{
+        min-width: 700px;
+    }
+
+    .table-card th,
+    .table-card td{
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+}

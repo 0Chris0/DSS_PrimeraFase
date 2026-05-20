@@ -1,0 +1,212 @@
+/* ===================================
+   SOLO ESTILOS DE LA TABLA
+   NO MODIFICA MENU NI SIDEBAR
+=================================== */
+
+.card{
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 2px 5px rgba(0,0,0,.08);
+    margin-top: 15px;
+}
+
+/* HEADER */
+
+.card-header{
+    background: #dfe8fb;
+    padding: 16px 20px;
+    font-size: 14px;
+    color: #55627c;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+/* ===================================
+   BUSCADOR Y BOTON
+=================================== */
+
+.table-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 18px;
+    background: #fff;
+}
+
+.search-box{
+    width: 320px;
+    height: 42px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    background: white;
+}
+
+.search-box i{
+    color: #b5b5b5;
+    font-size: 15px;
+}
+
+.search-box input{
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 14px;
+    background: transparent;
+}
+
+/* BOTON */
+
+.btn-add{
+    background: #16a637;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: .3s;
+}
+
+.btn-add:hover{
+    background: #12872d;
+}
+
+/* ===================================
+   TABLA
+=================================== */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* TITULOS */
+
+table thead{
+    background: #dfe8fb;
+}
+
+table th{
+    padding: 14px;
+    font-size: 15px;
+    color: #1450b8;
+    font-weight: 700;
+    border: 1px solid #bdbdbd;
+    text-align: center;
+}
+
+/* FILAS */
+
+table td{
+    padding: 16px 12px;
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    font-size: 14px;
+    color: #4b5a73;
+}
+
+/* ===================================
+   ACCIONES
+=================================== */
+
+.actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.edit{
+    color: #1f7bff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.delete{
+    color: #ff2a2a;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.edit:hover,
+.delete:hover{
+    transform: scale(1.1);
+}
+
+/* ===================================
+   PAGINACION
+=================================== */
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.pagination span{
+    color: #4d5b74;
+    font-size: 14px;
+}
+
+.pages{
+    display: flex;
+    align-items: center;
+}
+
+.pages button{
+    width: 42px;
+    height: 38px;
+    border: 1px solid #cfcfcf;
+    background: white;
+    color: #1450b8;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pages button:hover{
+    background: #f1f5ff;
+}
+
+.pages .active{
+    background: #2d68df;
+    color: white;
+}
+
+/* ===================================
+   RESPONSIVE SOLO TABLA
+=================================== */
+
+@media(max-width:768px){
+
+.table-actions{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-box{
+    width: 100%;
+}
+
+.card{
+    overflow-x: auto;
+}
+
+table{
+    min-width: 700px;
+}
+
+}
+

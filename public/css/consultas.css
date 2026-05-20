@@ -1,0 +1,206 @@
+/* =========================
+   MAIN
+========================= */
+.main-content{
+    padding: 30px 35px 35px 35px;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+.breadcrumb{
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   TITULO
+========================= */
+.page-title{
+    font-size: 32px;
+    color: #2c59b2;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   INFO
+========================= */
+.consulta-info{
+    background: #eef2ff;
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+/* =========================
+   GRID
+========================= */
+.consultas-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+
+/* =========================
+   CARD GRANDE
+========================= */
+.consulta-card{
+    width: 100%;
+    max-width: 420px;
+
+    background: #f7f7f7;
+
+    border: 1px solid #cfcfcf;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+
+    min-height: 240px;
+
+    transition: 0.2s;
+}
+
+.consulta-card:hover{
+    transform: translateY(-3px);
+}
+
+/* =========================
+   HEADER
+========================= */
+.consulta-header{
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 22px;
+
+    gap: 16px;
+}
+
+/* ICONOS GRANDES */
+.consulta-header img{
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+/* TEXTO */
+.consulta-header span{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* =========================
+   BODY
+========================= */
+.consulta-body{
+    padding: 28px;
+}
+
+/* =========================
+   INPUT
+========================= */
+.input-box{
+    width: 100%;
+    height: 46px;
+
+    background: white;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+
+    margin-bottom: 22px;
+}
+
+/* ICONO BUSQUEDA */
+.input-box i{
+    color: #9ca3af;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+/* INPUT */
+.input-box input{
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+    color: #444;
+}
+
+/* =========================
+   BOTON
+========================= */
+.consulta-body button{
+    width: 100%;
+    height: 46px;
+
+    border: 1px solid #bdbdbd;
+
+    background: #efefef;
+
+    color: #444;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.consulta-body button:hover{
+    background: #e3e3e3;
+}
+
+/* =========================
+   COLORES
+========================= */
+
+/* VERDE */
+.green .consulta-header{
+    background: linear-gradient(to bottom,#2bb34b,#17893a);
+}
+
+/* CELESTE */
+.cyan .consulta-header{
+    background: linear-gradient(to bottom,#3ec0f0,#2196d3);
+}
+
+/* AZUL */
+.blue .consulta-header{
+    background: linear-gradient(to bottom,#4d8cff,#3567d6);
+}
+
+/* ROJO */
+.red .consulta-header{
+    background: linear-gradient(to bottom,#ef4136,#c62828);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:900px){
+
+    .consultas-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .consulta-card{
+        max-width: 100%;
+    }
+
+}

@@ -1,0 +1,145 @@
+/* ==========================================================================
+   SECCIÓN DE REPORTES - ESTILOS BASE Y MAQUETACIÓN
+   ========================================================================== */
+
+/* Contenedor principal de la cuadrícula */
+.reportes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea exactamente 2 columnas iguales */
+    gap: 24px;                             /* Espaciado limpio entre tarjetas */
+    margin-top: 20px;
+}
+
+/* ==========================================================================
+   ESTRUCTURA DE LAS TARJETAS (CARDS)
+   ========================================================================== */
+
+.reporte-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06); /* Sombra suave idéntica a la imagen */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; /* Alinea el botón "Ver Reporte" hacia la derecha */
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto sutil al pasar el cursor sobre la tarjeta */
+.reporte-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Bloque contenedor de icono + textos */
+.reporte-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+/* Contenedor de textos */
+.reporte-text {
+    flex: 1;
+}
+
+.reporte-text h3 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1450b8; /* El azul corporativo de los títulos de tu sistema */
+}
+
+.reporte-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #55627c; /* Gris azulado para descripciones legibles */
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   ICONOS Y VARIACIONES DE COLOR
+   ========================================================================== */
+
+.reporte-icon {
+    font-size: 40px; /* Tamaño ideal y proporcional */
+    width: 50px;
+    text-align: center;
+}
+
+/* Tonos para los iconos FontAwesome simulando las ilustraciones */
+.reporte-icon.blue {
+    color: #3b82f6; /* Azul médico */
+}
+
+.reporte-icon.orange {
+    color: #f97316; /* Naranja/Amarillo de analíticas */
+}
+
+.reporte-icon.yellow {
+    color: #eab308; /* Dorado estrella */
+}
+
+/* ==========================================================================
+   BOTONES CON DEGRADADO (BOTÓN AZUL CON FLECHA)
+   ========================================================================== */
+
+.btn-reporte {
+    background: linear-gradient(135deg, #4481eb 0%, #04befe 100%); /* Degradado azul vibrante */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 50px; /* Bordes redondeados estilo cápsula */
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(4, 190, 254, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-reporte i {
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+/* Animación interactiva en el botón */
+.btn-reporte:hover {
+    background: linear-gradient(135deg, #3b71d4 0%, #03a9df 100%);
+    box-shadow: 0 5px 12px rgba(4, 190, 254, 0.4);
+    transform: scale(1.03);
+}
+
+/* Pequeño empuje de la flecha al pasar el mouse */
+.btn-reporte:hover i {
+    transform: translateX(4px);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (DISEÑO ADAPTABLE)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    /* En pantallas medianas o tablets reducimos el espaciado ligeramente */
+    .reportes-grid {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* En móviles las tarjetas pasan a ocupar todo el ancho en una sola columna */
+    .reportes-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .reporte-card {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+/* FONDO */
+.container-auth{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:150px;
+    background:linear-gradient(to right,#4d8df7,#0b46c3);
+    position:relative;
+    overflow:hidden;
+}
+/* CURVA BLANCA */
+.container-auth::after{
+    content:'';
+    position:absolute;
+    bottom:-120px;
+    width:120%;
+    height:300px;
+    background:#f2f2f2;
+    border-radius:50%;
+}
+
+/* LOGO Y TITULO */
+.top-content{
+    position:absolute;
+    top:40px;
+    text-align:center;
+    z-index:2;
+}
+.form-title{
+    font-size:20px;
+    color:#1E4FA8;
+    font-weight:799;
+    margin-bottom:18px;
+}
+.logo{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.title-system{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    margin-top:5px;
+}
+
+/* CARD */
+.card-auth{
+    width:610px;
+    background:white;
+    padding:40px 45px;
+    border-radius:6px;
+    text-align:center;
+    position:relative;
+    z-index:2;
+    box-shadow:0 4px 15px rgba(0,0,0,0.25);
+
+    margin-top:50px;
+}
+/* TITULO */
+
+
+/* INPUTS */
+.input-group{
+    width:100%;
+    height:58px;
+    display:flex;
+    align-items:center;
+    border:1px solid #8F7E7E;
+    margin-bottom:18px;
+    background:white;
+    border-radius:2px;
+}
+.input-group i{
+    width:65px;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f7f7f7;
+    color:#1E4FA8;
+    border-right:1px solid #8F7E7E;
+    font-size:24px;
+}
+
+.input-group input{
+    width:100%;
+    height:100%;
+    border:none;
+    outline:none;
+    padding:0 16px;
+    font-size:18px;
+    color:#A7B7D4;
+    font-weight:600;
+}
+.input-group input::placeholder{
+    color:#A7B7D4;
+}
+/* BOTON */
+.btn-auth{
+    width:78%;
+    padding:14px;
+    background:#1359D9;
+    border:none;
+    color:white;
+    border-radius:4px;
+    cursor:pointer;
+    margin-top:18px;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.btn-auth:hover{
+    background:#0f4fc4;
+}
+
+.btn-auth:hover{
+    background:#0a43ae;
+}
+
+/* LINKS */
+.links{
+    margin-top:12px;
+    font-size:14px;
+    color:#1E4FA8;
+}
+
+.links a{
+    text-decoration:none;
+    color:#1E4FA8;
+    font-weight:600;
+}
+
+.links a:hover{
+    text-decoration:underline;
+}
+
+.forgot-password{
+    width:100%;
+    text-align:left;
+    margin-top:-5px;
+    margin-bottom:18px;
+    font-size:11px;
+}
+
+.forgot-password a{
+    text-decoration:none;
+    color:#1E4FA8;
+    font-weight:500;
+}
+
+.forgot-password a:hover{
+    text-decoration:underline;
+}
+
+/* MENSAJES */
+.error-box{
+    background:#ffdede;
+    color:#c10000;
+    padding:10px;
+    margin-bottom:15px;
+    border-radius:4px;
+    font-size:14px;
+}
+
+.success-box{
+    background:#d9ffd9;
+    color:#008000;
+    padding:10px;
+    margin-bottom:15px;
+    border-radius:4px;
+    font-size:14px;
+}
